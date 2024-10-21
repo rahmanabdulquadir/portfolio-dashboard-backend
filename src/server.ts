@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// app.use("/api", projectRoutes);
+app.use("/api", projectRoutes);
 app.get("/", (req, res) => {
   res.send("Welcome to the portfolio dashboard backend system");
 });
